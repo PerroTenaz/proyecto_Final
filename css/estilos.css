@@ -1,0 +1,359 @@
+:root {
+  --funteTitulos: 'Oswald', sans-serif;
+  --fuenteParrafos: 'PT Sans', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**------------------
+      GLOBALES 
+------------------**/
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: var(--funteTitulos);
+}
+
+.contenedor {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/**------------------ 
+    UTILIDADES 
+------------------**/
+
+.sinMargen {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+
+/**---------------------------
+           HEADER 
+---------------------------**/
+
+.header {
+  background-image: url(../img/fondoArquitectura7.jpg);
+  background-repeat: no-repeat;
+  height: 450px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contenidoHeader {
+  background-color: #000000af;
+  padding: 15px;
+  top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenidoHeader h1 {
+  color: #ffff;
+  text-transform: uppercase;
+}
+
+.navegacion a {
+  color: #ffffff;
+  font-family: var(--fuenteParrafos);
+  margin-right: 15px;
+  font-size: 17px;
+}
+
+.navegacion a:hover {
+  border-bottom: 2px solid #ffff;
+  padding-bottom: 5px;
+}
+
+/**-----------------------------
+          SECTION 
+-----------------------------**/
+
+.contenidoCentral {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.seccionIzquierda {
+  background-color: rgba(0, 120, 175);
+  padding-bottom: 70px;
+}
+
+.imagenPersonal {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.contenidoSeccionIzquierda {
+  margin-top: 50px;
+}
+
+.subtituloSeccionIzquierda {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono {
+  font-size: 25px;
+  margin-right: 8px;
+}
+
+.contenidoSeccionIzquierda h2 {
+  text-transform: uppercase;
+  font-family: var(--funteTitulos);
+}
+
+.subtituloEscalable {
+  transform: scale(1.5);
+}
+
+.animarAcheDos {
+  transition: 1s ease-in-out;
+}
+
+.contenidoSeccionIzquierda p {
+  text-align: justify;
+  margin: 20px auto 0 auto;
+  width: 80%;
+  font-family: var(--fuenteParrafos);
+}
+
+.listaDeEstudios {
+  padding: 0;
+  margin: 20px auto 0 auto;
+  width: 80%;
+}
+
+.listaDeEstudios li {
+  font-family: var(--fuenteParrafos);
+  margin-top: 10px;
+}
+
+.listaDeEstudios span {
+  font-weight: 900;
+}
+
+.contenedorBarra {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.contenedorBarra p {
+  margin: 0;
+}
+
+.progreso {
+  height: 10px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-top: 5px;
+}
+
+.barraProgreso {
+  height: 100%;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  transition: width 0.25s;
+  border-radius: 5px;
+}
+
+.inicio {
+  width: 0%;
+}
+
+.finIngles {
+  width: 95%;
+}
+
+.finFrances {
+  width: 50%;
+}
+
+.finItaliano {
+  width: 80%;
+}
+
+.finAleman {
+  width: 30%;
+}
+
+.animacion {
+  transition: all 1.5s ease .5s;
+}
+
+.botonIdiomas {
+  width: 80px;
+  min-height: 30px;
+  margin-top: 10px;
+  font-family: var(--fuenteParrafos);
+  font-size: 15px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.seccionDerecha {
+  margin-left: 50px;
+}
+
+.seccionDerecha h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.contenidoSeccionDerecha {
+  margin-top: 50px;
+}
+
+.contenidoSeccionDerecha h3 {
+  font-family: var(--funteTitulos);
+}
+
+.contenidoSeccionDerecha p {
+  margin-top: 20px;
+  font-family: var(--fuenteParrafos);
+}
+
+.referencias {
+  font-weight: 900;
+  font-style: italic;
+}
+
+/**----------------------
+       FORMULARIO 
+----------------------**/
+
+form {
+  background-color: rgb(238, 233, 233);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 5%;
+  padding-bottom: 15px;
+  margin-top: 100px;
+}
+
+input,
+textarea,
+label {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+input,
+label {
+  font-family: var(--fuenteParrafos);
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.btnEnviar {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/**-------------------------
+          FOOTER  
+-------------------------**/
+
+.footer {
+  background-color: #000000;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.contenidoFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenidoFooterPe p {
+  color: #ffffff;
+  font-family: var(--fuenteParrafos);
+  font-size: 12px;
+  font-style: italic;
+}
+
+.iconosContacto {
+  color: #ffffff;
+}
+
+/**-------------------------- 
+        MEDIAS QUERIES 
+--------------------------**/
+
+@media (max-width: 768px) {
+  .contenidoHeader {
+    display: block;
+  }
+
+  .navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .navegacion a {
+    margin-top: 5px;
+  }
+
+  .contenidoHeader h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenidoCentral {
+    display: block;
+  }
+
+  .imagenPersonal {
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .seccionDerecha {
+    margin: 0;
+  }
+
+  form {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
